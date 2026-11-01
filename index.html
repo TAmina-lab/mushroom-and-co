@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="mushroom-header">
+      <p>THE ENCHANTED FOREST • EST. 1897</p>
+      <h1>Mushroom & Co.</h1>
+      <p>A little cap. A big career.</p>
+      <img
+        src="https://animato.uk/cdn/shop/files/BOT-WLD-186_unframed.jpg?v=1746574494"
+        class="mushroom-image"
+        alt="Vintage picture of a mushroom family."
+      />
+    </header>
+    <main>
+      <section class="description">
+        <h2>Join Our Fungi Family!</h2>
+        <p>
+          Think you have what it takes to become an outstanding member of our
+          woodland workforce? We are looking for fungi with character, ambition,
+          and excellent spore management skills.
+        </p>
+      </section>
+      <section class="position-alert">
+        <h2>POSITION AVAILABLE</h2>
+        <h2>Junior Forest Mushroom</h2>
+        <p>Department: Woodland Operations</p>
+        <p>Location: Under the Old Oak Tree</p>
+        <p>Salary: 3 acorns per week + unlimited moss</p>
+      </section>
+      <section class="formular">
+        <div class="container">
+          <h2>Your application starts here ↓</h2>
+
+          <form>
+            <fieldset>
+              <legend>01 / Fungi Identification</legend>
+              <label for="name"> Full name: </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required
+                placeholder="e.g. Sir Shroomington III"
+              />
+
+              <label for="email"> Email: </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="e.g. shroom@forest.com"
+              />
+
+              <label for="position"> Select a position: </label>
+              <select name="position" id="position" required>
+                <option value="" selected disabled>Select a position</option>
+                <option value="forest-scout">Forest scout</option>
+                <option value="spore-analyst">Spore analyst</option>
+                <option value="moss-manager">Moss manager</option>
+              </select>
+            </fieldset>
+
+            <fieldset class="radio-group">
+              <legend class="qualifications">
+                02 / Professional Qualifications
+              </legend>
+              <fieldset class="work-shift">
+                <legend>Preferred work shift?</legend>
+                <label class="option" for="daylight">
+                  <input
+                    type="radio"
+                    id="daylight"
+                    name="availability"
+                    value="daylight"
+                    required
+                  />
+                  Daylight
+                </label>
+                <label class="option" for="moonlight">
+                  <input
+                    type="radio"
+                    id="moonlight"
+                    name="availability"
+                    value="moonlight"
+                  />
+                  Moonlight
+                </label>
+              </fieldset>
+              <fieldset class="skills">
+                <legend>What are your strongest skills?</legend>
+                <label class="option" for="camouflage">
+                  <input
+                    type="checkbox"
+                    id="camouflage"
+                    name="skills"
+                    value="camouflage"
+                  />
+                  Excellent camouflage
+                </label>
+                <label class="option" for="spore-production">
+                  <input
+                    type="checkbox"
+                    id="spore-production"
+                    name="skills"
+                    value="spore production"
+                  />
+                  Exceptional spore production
+                </label>
+                <label class="option" for="teamwork">
+                  <input
+                    type="checkbox"
+                    id="teamwork"
+                    name="skills"
+                    value="teamwork"
+                  />
+                  Teamwork with local moss
+                </label>
+                <label class="option" for="sunlight">
+                  <input
+                    type="checkbox"
+                    id="sunlight"
+                    name="skills"
+                    value="sunlight"
+                  />
+                  Can survive on minimal sunlight
+                </label>
+              </fieldset>
+              <fieldset class="weakness">
+                <legend>Which challenges do you struggle with?</legend>
+                <label class="option" for="moisture">
+                  <input
+                    type="checkbox"
+                    id="moisture"
+                    name="weakness"
+                    value="moisture"
+                  />
+                  Too much moisture
+                </label>
+                <label class="option" for="squirrels">
+                  <input
+                    type="checkbox"
+                    id="squirrels"
+                    name="weakness"
+                    value="squirrels"
+                  />
+                  Fear of squirrels
+                </label>
+                <label class="option" for="overthinking">
+                  <input
+                    type="checkbox"
+                    id="overthinking"
+                    name="weakness"
+                    value="overthinking"
+                  />
+                  Chronic overthinking
+                </label>
+              </fieldset>
+            </fieldset>
+            <fieldset>
+              <legend>03 / Future Plans</legend>
+              <label for="message"
+                >Why should we hire you, and where do you see yourself in 100
+                years?</label
+              >
+              <textarea
+                cols="50"
+                rows="5"
+                id="message"
+                name="message"
+                placeholder="Tell us why you're the mushroom we're looking for..."
+              ></textarea>
+            </fieldset>
+            <fieldset>
+              <legend>04 / Other</legend>
+              <label for="date">Available start date</label>
+              <input
+                type="date"
+                id="date"
+                name="date"
+                value="2027-10-19"
+                min="2027-10-19"
+                max="2027-12-30"
+              />
+              <br />
+              <label for="portfolio"> Upload your spore portfolio: </label>
+              <input
+                type="file"
+                name="portfolio"
+                id="portfolio"
+                accept=".pdf,.png,.jpg,.jpeg"
+              />
+            </fieldset>
+            <button type="submit">Submit</button>
+            <p class="form-note">
+              Thank you for considering a career with Mushroom & Co. May your
+              future be full of sunshine and fertile soil.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="footer-note">
+        Mushroom & Co. is an equal-opportunity employer. All fungi welcome.
+      </p>
+    </footer>
+  </body>
+</html>

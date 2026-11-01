@@ -1,0 +1,225 @@
+/*GENERAL*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f5f0e4;
+  color: #344735;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, serif;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 10px 0;
+}
+
+h2 {
+  color: #344735;
+}
+
+p {
+  color: #5c4438;
+}
+
+/*HEADER*/
+
+.mushroom-header {
+  position: relative;
+  text-align: center;
+  padding: 40px 170px 35px 30px;
+  background-color: #e8e5d6;
+  border-bottom: 3px solid #344735;
+}
+
+.mushroom-image {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.mushroom-header p:first-child {
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+/* MAIN */
+
+main {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.description {
+  margin-bottom: 30px;
+}
+
+.position-alert {
+  padding: 24px;
+  background-color: #e8e5d6;
+  border-left: 5px solid #a34f3e;
+  border-radius: 8px;
+  margin-bottom: 35px;
+}
+
+.position-alert h2:first-child {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  color: #a34f3e;
+}
+
+/* FORM STRUCTURE */
+
+fieldset {
+  border: 1px solid #d8cbb6;
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+legend {
+  color: #344735;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  padding: 0 8px;
+}
+
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+/* Text, mail, date, section & textarea */
+
+input[type="text"],
+input[type="email"],
+input[type="date"] select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 6px 0 18px;
+  border: 1px solid #b9ad98;
+  border-radius: 6px;
+  background-color: #fffcf5;
+}
+
+/* First input field - FCC requirement */
+
+input[type="text"]:first-of-type {
+  border-radius: 20px;
+}
+
+/* Focus state */
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid #a34f3e;
+  outline-offset: 2px;
+}
+
+/* RADIO & CHECKBOXES */
+.option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.option input {
+  width: auto;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.option:hover {
+  color: #a34f3e;
+}
+
+/* Select option */
+
+.option:has(input:checked) {
+  color: #a34f3e;
+}
+
+/* SUBMIT BUTTON */
+
+button[type="submit"] {
+  background-color: #344735;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 28px;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+button[type="submit"]:hover {
+  background-color: #a34f3e;
+}
+
+/* FORM FOOTNOTE */
+.form-note {
+  text-align: center;
+  font-style: italic;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #e8e5d6;
+  border-top: 3px solid #344735;
+}
+
+footer p {
+    text-align: center;
+    margin: 0;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+  .mushroom-header {
+    padding: 25px 20px;
+  }
+
+  .mushroom-image {
+    position: static;
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 15px auto 0;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  fieldset {
+    padding: 16px;
+  }
+
+  main {
+    padding: 20px 14px;
+  }
+}
