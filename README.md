@@ -10,6 +10,10 @@ Mushroom & Co. is a fictional job application page where mushrooms can apply for
 
 The project combines a playful concept with a vintage woodland-inspired design.
 
+## Live Demo
+
+https://tamina-lab.github.io/mushroom-and-co/
+
 ## Built With
 
 - HTML5
